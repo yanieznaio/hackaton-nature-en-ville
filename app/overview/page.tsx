@@ -81,10 +81,6 @@ export default function LandingGrid() {
               </p>
             </div>
           </div>
-
-          <button className="self-start text-sm flex items-center gap-2">
-            Voir les missions <span>→</span>
-          </button>
         </div>
 
         {/* Bottom center – Link to platform */}
