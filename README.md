@@ -67,5 +67,5 @@ Participer à ce type de hackathon m’a permis, je pense, de développer une fo
 
 L'association DONUT : https://hackathon-nature-ville.ledonut-marseille.com/docs/le-projet/porteur-projet
 Lien de la landing page: https://clean-ma-ville-landing.vercel.app/
-Lien de la demo de la plateforme -  Realiser par Alex : https://hackathon-nature.vercel.app/app/missions
+Lien de la démo de la plateforme — réalisée par Alex : https://hackathon-nature.vercel.app/app/missions
 
