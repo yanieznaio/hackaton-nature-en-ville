@@ -20,7 +20,7 @@ const LandingPage = () => {
         {/* Background video */}
         <iframe
           src="https://iframe.videodelivery.net/9a662853ccda022e72bc7976ef25d51a?autoplay=true&muted=true&loop=true&controls=false&preload=true"
-          className="absolute inset-0 h-[100%] w-[105%] scale-[1.5]"
+          className="absolute inset-0 h-[100%] w-[105%] scale-[1.5] object-cover"
           allow="autoplay; encrypted-media"
           loading="eager"
           style={{ pointerEvents: "none" }}
