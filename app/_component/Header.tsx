@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const links = [
-  { href: "/", label: "A propos" },
+  { href: "/", label: "Accueil" },
   { href: "/overview", label: "Preview" },
 ];
 
@@ -75,7 +75,7 @@ export default function Header() {
                 linkRefs.current[i] = el;
               }}
               onMouseEnter={(e) => movePillTo(e.currentTarget)}
-              className={`relative z-10 px-10 py-3 text-xs md:text-xl transition-colors ${
+              className={`relative z-10 px-3 md:px-10 py-2 md:py-3 text-xs md:text-xl transition-colors ${
                 pathname === link.href
                   ? "text-white"
                   : "text-neutral-100/50 hover:text-white"

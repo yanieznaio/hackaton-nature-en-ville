@@ -10,7 +10,7 @@ export default function LandingGrid() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="md:h-screen w-screen bg-black pt-10 md:pt-6 p-6"
+      className="md:h-screen w-full bg-black pt-10 md:pt-6  p-10 md:p-6"
     >
       <div className="grid h-full w-full grid-cols-1 lg:grid-cols-12 grid-rows-6 lg:grid-rows-6 gap-6">
         {/* Top left – 360 partner */}
