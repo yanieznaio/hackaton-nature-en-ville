@@ -10,7 +10,7 @@ export default function FullscreenVideoScrollSection() {
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <iframe
           src="https://iframe.videodelivery.net/0411d72287a701a564a50d54095413c8?autoplay=true&muted=true&loop=true&controls=false"
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-[105%] h-[105%] scale-[1.5]"
           allow="autoplay; encrypted-media"
           loading="eager"
           style={{ pointerEvents: "none" }}
