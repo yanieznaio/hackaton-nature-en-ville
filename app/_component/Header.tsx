@@ -50,7 +50,7 @@ export default function Header() {
       <div className="flex items-center gap-1 md:gap-2 h-12 md:h-16 rounded-2xl md:rounded-3xl bg-white/40 backdrop-blur-md shadow-sm">
         {/* Logo */}
         <div className="flex items-center pl-4 pr-2 h-full">
-          <span className="text-lg md:text-2xl font-bold text-white">
+          <span className="text-sm md:text-2xl font-bold text-white">
             CleanMaVille
           </span>
         </div>
@@ -75,7 +75,7 @@ export default function Header() {
                 linkRefs.current[i] = el;
               }}
               onMouseEnter={(e) => movePillTo(e.currentTarget)}
-              className={`relative z-10 px-10 py-3 text-sm md:text-xl transition-colors ${
+              className={`relative z-10 px-10 py-3 text-xs md:text-xl transition-colors ${
                 pathname === link.href
                   ? "text-white"
                   : "text-neutral-100/50 hover:text-white"

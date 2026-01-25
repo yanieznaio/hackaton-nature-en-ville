@@ -60,7 +60,7 @@ export default function Footer() {
             target="_blank"
             className="flex items-center gap-2 text-sm font-medium text-white/80 hover:text-white transition"
           >
-            Creer une mission
+            Créer une mission
             <span className="text-blue-400 text-lg">→</span>
           </Link>
         </div>

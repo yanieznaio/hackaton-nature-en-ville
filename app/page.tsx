@@ -34,8 +34,8 @@ const LandingPage = () => {
             className="max-w-6xl text-white leading-[0.95] flex flex-col
     text-4xl md:text-[72px] font-bold tracking-[-0.04em]"
           >
-            <span>Sois volontaire</span>
-            <span className="tracking-[-0.02em]">et reçois en retour</span>
+            <span>Soit volontaire</span>
+            <span className="tracking-[-0.02em]">et reçoit en retour</span>
           </h1>
         </div>
 
@@ -56,7 +56,7 @@ const LandingPage = () => {
                 target="_blank"
                 className="text-sm md:text-lg text-black pr-4 font-semibold tracking-tight"
               >
-                trouver ou creer une mission
+                Trouve ou crée une mission
               </Link>
             </div>
           </div>
