@@ -15,25 +15,22 @@ export default function LandingGrid() {
       <div className="grid h-full w-full grid-cols-12 grid-rows-6 gap-6">
         {/* Top left – 360 partner */}
         <div className="col-span-4 row-span-3 relative rounded-3xl overflow-hidden">
-          <video
-            className="absolute inset-0 h-full w-full object-cover"
-            src="/desktop-overview.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
+          <iframe
+            src="https://iframe.videodelivery.net/828c5062cabdbb925ef0096793eca070?autoplay=true&muted=true&loop=true&controls=false&preload=true"
+            className="absolute inset-0 h-full w-[120%] rounded-xl scale-[1.09]"
+            allow="autoplay; encrypted-media"
+            loading="lazy"
           />
         </div>
 
         {/* Center large product — VIDEO */}
         <div className="col-span-4 row-span-4 relative rounded-3xl overflow-hidden bg-neutral-100 mt-20">
-          <video
-            className="absolute inset-0 h-full w-full object-cover"
-            src="/8543892-hd_1920_1080_25fps.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
+          <iframe
+            src="https://iframe.videodelivery.net/41473fa5db710e4a5c2170cc12a7fe42?autoplay=true&muted=true&loop=true&controls=false&preload=true"
+            className="absolute inset-0 h-full scale-[1.5] w-[120%]"
+            allow="autoplay; encrypted-media"
+            loading="lazy"
+            style={{ pointerEvents: "none" }}
           />
         </div>
 

@@ -8,13 +8,12 @@ export default function FullscreenVideoScrollSection() {
     <section className="relative w-full h-[400vh] bg-black">
       {/* STICKY VIDEO BACKGROUND */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <video
-          className="absolute inset-0 w-full h-full object-cover"
-          src="/3209571-uhd_3840_2160_25fps.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
+        <iframe
+          src="https://iframe.videodelivery.net/0411d72287a701a564a50d54095413c8?autoplay=true&muted=true&loop=true&controls=false"
+          className="absolute inset-0 w-full h-full"
+          allow="autoplay; encrypted-media"
+          loading="eager"
+          style={{ pointerEvents: "none" }}
         />
         <div className="absolute inset-0 bg-black/40" />
 

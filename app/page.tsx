@@ -18,15 +18,13 @@ const LandingPage = () => {
     >
       <section className="relative h-screen w-full overflow-hidden bg-neutral-200">
         {/* Background video */}
-        <video
-          className="absolute inset-0 h-full w-full object-cover"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src="/7475339-hd_1920_1080_25fps.mp4" type="video/mp4" />
-        </video>
+        <iframe
+          src="https://iframe.videodelivery.net/9a662853ccda022e72bc7976ef25d51a?autoplay=true&muted=true&loop=true&controls=false&preload=true"
+          className="absolute inset-0 h-full w-full"
+          allow="autoplay; encrypted-media"
+          loading="eager"
+          style={{ pointerEvents: "none" }}
+        />
 
         {/* Center hero text */}
         <div className="relative z-10 flex h-full mt-20 flex-col items-center justify-center px-6 text-center">
