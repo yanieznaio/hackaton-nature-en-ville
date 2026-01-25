@@ -1,6 +1,6 @@
 # cleanMaVille — Landing Page
 
-Ce projet a été conçu dans le cadre du **Hackathon Nature en Ville**, organisé à **Marseille** par l’association **Donuts** du **23 au 25 janvier 2026**, auquel j’ai participé durant ma formation à **l’École 42 Marseille **.
+Ce projet a été conçu dans le cadre du **Hackathon Nature en Ville**, organisé à **Marseille** par l’association **Le Donut** du **23 au 25 janvier 2026**, auquel j’ai participé durant ma formation à **l’École 42 Marseille **.
 
 ---
 
