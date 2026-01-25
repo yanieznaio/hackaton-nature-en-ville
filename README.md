@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# cleanMaVille — Landing Page
 
-## Getting Started
+Ce projet a été conçu dans le cadre du **Hackathon Nature en Ville**, organisé à **Marseille** par l’association **Donuts** du **23 au 25 janvier 2026**, auquel j’ai participé durant ma formation à **l’École 42 Marseille **.
 
-First, run the development server:
+Il y a des idées qui naissent moins d’une ambition que d’un malaise discret.  
+Celui de voir sa ville, familière et aimée, peu à peu négligée.  
+**cleanMaVille** est né de cet endroit-là.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Contexte
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Pendant trois jours, citoyens, développeurs et porteurs de projets ont partagé un même espace — physique et mental — pour réfléchir ensemble à une question simple et inconfortable :  
+comment renouer avec la nature dans nos villes, et surtout, comment en prendre soin collectivement ?
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Le projet : cleanMaVille
 
-To learn more about Next.js, take a look at the following resources:
+Alex et moi avons eu cette idée:
+sensibiliser les plus jeunes, non pas par des discours abstraits, mais par l’action.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Le volontariat est valorisé par un système de récompense.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**cleanMaVille** est pensé comme une plateforme citoyenne qui encourage les jeunes à participer à des missions volontaires :
 
-## Deploy on Vercel
+- actions de propreté,  
+- initiatives locales,  
+- engagements concrets pour leur environnement immédiat.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+L’objectif n’est pas de culpabiliser, mais de rendre visible l’impact individuel, de transformer un geste simple en expérience collective.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Ma contribution
+
+Sur ce projet, j’ai travaillé sur la **landing page**, qui constitue la porte d’entrée émotionnelle et narrative du produit.
+
+Cette landing page avait un rôle précis :
+
+- poser le ton du projet,  
+- expliquer l’intention sans surcharger,  
+- donner envie d’agir sans promettre trop.
+
+Elle a été développée avec :
+
+- Next.js  
+- TypeScript  
+
+
+---
+
+## Collaboration
+
+Le projet a été réalisé en collaboration avec **Alex**, partenaire du hackathon, qui s’est chargé de la partie plateforme (logique métier, fonctionnalités principales).
+
+Cette séparation claire des rôles a permis d’avancer vite, tout en gardant une vision cohérente du projet.
+
+---
+
+## Retour personnel
+
+Ce que j’ai aimé sur ce projet, en dehors du buffet de légumes grillés et du vin blanc, c’était la diversité des profils, rarement présente dans les hackathons habituels.
+
+Cela m’a permis d’assister à la réalisation d’autres projets, comme *Plus Beeelle Ma Ville* ou encore un jeu de cartes en lien avec les oiseaux .
+
+Quand on a la tête dans le code vingt-quatre heures sur vingt-quatre, on a parfois du mal à faire émerger ce genre d’idées. 
+On vit dans une bulle de code et d’écrans, coupée de l’extérieur.
+
+Participer à ce type de hackathon m’a permis, je pense, de développer une forme d’empathie et d’interagir avec une communauté qui veut changer des choses, qui attend que des problèmes concrets soient résolus, et qui est en forte demande d’innovation et de profils techniques.
+
+L'association DONUT : https://hackathon-nature-ville.ledonut-marseille.com/docs/le-projet/porteur-projet
+Lien de la landing page: https://clean-ma-ville-landing.vercel.app/
+Lien de la demo de la plateforme -  Realiser par Alex : https://hackathon-nature.vercel.app/app/missions
+
