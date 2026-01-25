@@ -20,12 +20,13 @@ const LandingPage = () => {
         {/* Background video */}
         <video
           className="absolute inset-0 h-full w-full object-cover"
-          src="/7475339-hd_1920_1080_25fps.mp4"
           autoPlay
           muted
           loop
           playsInline
-        />
+        >
+          <source src="/7475339-hd_1920_1080_25fps.mp4" type="video/mp4" />
+        </video>
 
         {/* Center hero text */}
         <div className="relative z-10 flex h-full mt-20 flex-col items-center justify-center px-6 text-center">
