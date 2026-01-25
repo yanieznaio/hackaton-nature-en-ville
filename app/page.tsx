@@ -74,24 +74,24 @@ export default LandingPage;
 
 function FullScreenIndustriesSection() {
   return (
-    <div className="w-full h-screen bg-[#1b1b1b] flex items-center justify-center">
-      <div className="w-[95%] h-[80%] flex gap-6 mt-14">
+    <div className="w-full min-h-screen lg:h-screen bg-[#1b1b1b] flex items-center justify-center">
+      <div className="w-[95%] lg:h-[80%] flex flex-col lg:flex-row gap-6 mt-6 lg:mt-14">
         {/* LEFT PANEL */}
-        <div className="flex-1 bg-[#f4efe9] rounded-2xl relative p-10 flex flex-col justify-between">
+        <div className="flex-1 bg-[#f4efe9] rounded-2xl relative p-6 lg:p-10 flex flex-col justify-between">
           <div className="text-center text-xs tracking-widest text-gray-400">
             MISSION COMMUNAUTAIRE
           </div>
 
-          <div className="flex flex-col items-center justify-center flex-1">
-            <h1 className="text-3xl font-semibold text-gray-900">
+          <div className="flex flex-col items-center justify-center flex-1 py-6 lg:py-0">
+            <h1 className="text-2xl lg:text-3xl font-semibold text-gray-900 text-center">
               Nettoyage de plage
             </h1>
-            <p className="mt-2 text-xl text-gray-500">
+            <p className="mt-2 text-lg lg:text-xl text-gray-500 text-center">
               Marseille · Mission collective
             </p>
           </div>
 
-          <div className="flex gap-6 text-xs text-gray-400 uppercase tracking-wide">
+          <div className="flex flex-wrap gap-3 lg:gap-6 text-xs text-gray-400 uppercase tracking-wide justify-center lg:justify-start">
             <span className="text-gray-900">Plage</span>
             <span>Plastique</span>
             <span>Déchets marins</span>
@@ -103,7 +103,7 @@ function FullScreenIndustriesSection() {
         </div>
 
         {/* RIGHT PANEL */}
-        <div className="flex-1 rounded-2xl relative overflow-hidden">
+        <div className="flex-1 rounded-2xl relative overflow-hidden min-h-[300px] lg:min-h-0">
           <img
             src="/group-activists-friends-collecting-plastic-waste-beach-guys-show-thumb-up.jpg"
             alt="Flames"
@@ -111,7 +111,7 @@ function FullScreenIndustriesSection() {
           />
 
           {/* INFO CARD */}
-          <div className="absolute bottom-10 right-10 bg-white/20 backdrop-blur-xl rounded-xl p-6 max-w-sm text-white shadow-lg">
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 lg:translate-x-0 lg:left-auto lg:right-10 lg:bottom-10 bg-white/20 backdrop-blur-xl rounded-xl p-4 lg:p-6 max-w-[90%] lg:max-w-sm text-white shadow-lg">
             <div className="w-8 h-8 mb-3 flex items-center justify-center rounded-md bg-white/30">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

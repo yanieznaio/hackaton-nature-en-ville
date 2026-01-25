@@ -10,11 +10,11 @@ export default function LandingGrid() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="h-screen w-screen bg-black p-6"
+      className="md:h-screen w-screen bg-black pt-10 md:pt-6 p-6"
     >
-      <div className="grid h-full w-full grid-cols-12 grid-rows-6 gap-6">
+      <div className="grid h-full w-full grid-cols-1 lg:grid-cols-12 grid-rows-6 lg:grid-rows-6 gap-6">
         {/* Top left – 360 partner */}
-        <div className="col-span-4 row-span-3 relative rounded-3xl overflow-hidden">
+        <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-3 relative rounded-3xl overflow-hidden">
           <iframe
             src="https://iframe.videodelivery.net/828c5062cabdbb925ef0096793eca070?autoplay=true&muted=true&loop=true&controls=false&preload=true"
             className="absolute inset-0 h-[110%] w-[120%] rounded-xl scale-[1.2]"
@@ -24,7 +24,7 @@ export default function LandingGrid() {
         </div>
 
         {/* Center large product — VIDEO */}
-        <div className="col-span-4 row-span-4 relative rounded-3xl overflow-hidden bg-neutral-100 mt-20">
+        <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-4 relative rounded-3xl overflow-hidden bg-neutral-100 mt-0 lg:mt-20">
           <iframe
             src="https://iframe.videodelivery.net/41473fa5db710e4a5c2170cc12a7fe42?autoplay=true&muted=true&loop=true&controls=false&preload=true"
             className="absolute inset-0 h-[110%] scale-[1.5] w-[120%]"
@@ -35,7 +35,7 @@ export default function LandingGrid() {
         </div>
 
         {/* Right industries */}
-        <div className="col-span-4 row-span-4 rounded-3xl bg-[#E1E0E6] p-8 flex flex-col justify-between">
+        <div className="col-span-1  lg:col-span-4 row-span-1 lg:row-span-4 rounded-3xl bg-[#E1E0E6] p-8 flex flex-col justify-between">
           <div>
             <span className="inline-block mb-4 rounded-full bg-neutral-200 px-3 py-1 text-xs font-medium">
               TYPES DE MISSIONS
@@ -56,7 +56,7 @@ export default function LandingGrid() {
         </div>
 
         {/* Bottom left – Periflex PS */}
-        <div className="col-span-4 row-span-3 rounded-3xl bg-[#4273D2] p-8 flex flex-col justify-between">
+        <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-3 rounded-3xl bg-[#4273D2] p-8 flex flex-col justify-between">
           <div>
             <h3 className="text-3xl font-medium mb-4">
               Missions & Récompenses
@@ -87,7 +87,7 @@ export default function LandingGrid() {
         <Link
           href="https://hackathon-nature.vercel.app"
           target="_blank"
-          className="col-span-4 row-span-2 relative rounded-3xl bg-[#E1E0E6] overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]"
+          className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-2 relative rounded-3xl bg-[#E1E0E6] overflow-hidden group cursor-pointer transition-transform hover:scale-[1.02]"
         >
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-black p-6">
             <span className="text-xs tracking-wide mb-2 opacity-60">
@@ -110,7 +110,7 @@ export default function LandingGrid() {
         </Link>
 
         {/* Bottom right – product strip */}
-        <div className="col-span-4 row-span-2 relative rounded-3xl overflow-hidden bg-[#2792DE]">
+        <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-2 relative rounded-3xl overflow-hidden bg-[#2792DE]">
           <Image
             src="/bluedekstopoverview.png"
             alt="Desktop overview"
