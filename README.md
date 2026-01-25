@@ -2,10 +2,6 @@
 
 Ce projet a été conçu dans le cadre du **Hackathon Nature en Ville**, organisé à **Marseille** par l’association **Donuts** du **23 au 25 janvier 2026**, auquel j’ai participé durant ma formation à **l’École 42 Marseille **.
 
-Il y a des idées qui naissent moins d’une ambition que d’un malaise discret.  
-Celui de voir sa ville, familière et aimée, peu à peu négligée.  
-**cleanMaVille** est né de cet endroit-là.
-
 ---
 
 ## Contexte
