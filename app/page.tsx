@@ -17,13 +17,22 @@ const LandingPage = () => {
       transition={{ duration: 1.2, ease: "easeOut" }}
     >
       <section className="relative h-screen w-full overflow-hidden bg-neutral-200">
-        {/* Background video */}
-        <iframe
-          src="https://iframe.videodelivery.net/9a662853ccda022e72bc7976ef25d51a?autoplay=true&muted=true&loop=true&controls=false&preload=true"
-          className="absolute inset-0 h-[100%] w-[105%] scale-[1.5] object-cover"
-          allow="autoplay; encrypted-media"
-          loading="eager"
-          style={{ pointerEvents: "none" }}
+        {/* Background image */}
+        <Image
+          src="/hero.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 hidden object-cover md:block"
+        />
+        <Image
+          src="/heromobile.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 object-cover md:hidden"
         />
 
         {/* Center hero text */}

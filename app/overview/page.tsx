@@ -15,22 +15,23 @@ export default function LandingGrid() {
       <div className="grid h-full w-full grid-cols-1 lg:grid-cols-12 grid-rows-6 lg:grid-rows-6 gap-6">
         {/* Top left – 360 partner */}
         <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-3 relative rounded-3xl overflow-hidden">
-          <iframe
-            src="https://iframe.videodelivery.net/828c5062cabdbb925ef0096793eca070?autoplay=true&muted=true&loop=true&controls=false&preload=true"
-            className="absolute inset-0 h-[110%] w-[120%] rounded-xl scale-[1.2]"
-            allow="autoplay; encrypted-media"
-            loading="lazy"
+          <Image
+            src="/bag.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 33vw, 100vw"
+            className="absolute inset-0 rounded-xl object-cover"
           />
         </div>
 
-        {/* Center large product — VIDEO */}
+        {/* Center large product — IMAGE */}
         <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-4 relative rounded-3xl overflow-hidden bg-neutral-100 mt-0 lg:mt-20">
-          <iframe
-            src="https://iframe.videodelivery.net/41473fa5db710e4a5c2170cc12a7fe42?autoplay=true&muted=true&loop=true&controls=false&preload=true"
-            className="absolute inset-0 h-[110%] scale-[1.5] w-[120%]"
-            allow="autoplay; encrypted-media"
-            loading="lazy"
-            style={{ pointerEvents: "none" }}
+          <Image
+            src="/bag.jpg"
+            alt=""
+            fill
+            sizes="(min-width: 1024px) 33vw, 100vw"
+            className="absolute inset-0 object-cover"
           />
         </div>
 

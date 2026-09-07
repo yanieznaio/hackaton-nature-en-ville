@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function FullscreenVideoScrollSection() {
@@ -6,14 +7,14 @@ export default function FullscreenVideoScrollSection() {
 
   return (
     <section className="relative w-full h-[400vh] bg-black">
-      {/* STICKY VIDEO BACKGROUND */}
+      {/* STICKY IMAGE BACKGROUND */}
       <div className="sticky top-0 h-screen w-full overflow-hidden">
-        <iframe
-          src="https://iframe.videodelivery.net/0411d72287a701a564a50d54095413c8?autoplay=true&muted=true&loop=true&controls=false"
-          className="absolute inset-0 w-[105%] h-[105%] scale-[1.5]"
-          allow="autoplay; encrypted-media"
-          loading="eager"
-          style={{ pointerEvents: "none" }}
+        <Image
+          src="/second.jpg"
+          alt=""
+          fill
+          sizes="100vw"
+          className="absolute inset-0 object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
 

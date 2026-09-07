@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 const links = [
   { href: "/", label: "Accueil" },
-  { href: "/overview", label: "Preview" },
+  { href: "/overview", label: "Demo" },
 ];
 
 export default function Header() {
