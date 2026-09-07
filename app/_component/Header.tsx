@@ -51,7 +51,7 @@ export default function Header() {
         {/* Logo */}
         <div className="flex items-center pl-4 pr-2 h-full">
           <span className="text-sm md:text-2xl font-bold text-white">
-            CleanMaVille
+            CLEANMAVILLE
           </span>
         </div>
         {/* Toggle */}

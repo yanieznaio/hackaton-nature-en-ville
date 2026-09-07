@@ -24,14 +24,17 @@ export default function LandingGrid() {
           />
         </div>
 
-        {/* Center large product — IMAGE */}
+        {/* Center large product — VIDEO */}
         <div className="col-span-1 lg:col-span-4 row-span-1 lg:row-span-4 relative rounded-3xl overflow-hidden bg-neutral-100 mt-0 lg:mt-20">
-          <Image
-            src="/bag.jpg"
-            alt=""
-            fill
-            sizes="(min-width: 1024px) 33vw, 100vw"
-            className="absolute inset-0 object-cover"
+          <video
+            src="/demo.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+            className="absolute inset-0 h-full w-full object-cover"
+            style={{ pointerEvents: "none" }}
           />
         </div>
 
