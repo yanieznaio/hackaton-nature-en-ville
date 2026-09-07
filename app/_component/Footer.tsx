@@ -69,20 +69,11 @@ export default function Footer() {
       {/* FOOTER BAR */}
       <div className="absolute bottom-0 left-0 w-full px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-6 text-sm text-white/60 z-30">
         <div className="flex items-center gap-2 text-white">
-          <span className="text-xl font-semibold">R</span>
-          <span>CleanMaVille®</span>
+          <span>CleanMaVille® 2026</span>
         </div>
 
         <div className="flex items-center gap-8">
-          <span>contact@cleanmaville.com</span>
-          <span>+34 93 862 7510</span>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <span>CLEANMAVILLE © 2026</span>
-          <button className="text-blue-400 text-lg hover:-translate-y-1 transition">
-            ↑
-          </button>
+          <p>{"Ce projet est une démo et a été conçu lors d’un hackathon."}</p>
         </div>
       </div>
 
