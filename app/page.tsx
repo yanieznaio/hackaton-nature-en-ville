@@ -63,7 +63,7 @@ const LandingPage = () => {
                 target="_blank"
                 className="text-sm md:text-lg text-black pr-4 font-semibold tracking-tight"
               >
-                Trouve ou crée une mission
+                Trouve / crée une mission
               </Link>
             </div>
           </div>

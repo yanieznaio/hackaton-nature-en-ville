@@ -17,22 +17,6 @@ export default function Header() {
 
   const [pillStyle, setPillStyle] = useState({ width: 0, left: 0 });
 
-  // Move pill to active route
-  useEffect(() => {
-    const activeIndex = links.findIndex((l) => l.href === pathname);
-    const el = linkRefs.current[activeIndex];
-
-    if (el && containerRef.current) {
-      const containerRect = containerRef.current.getBoundingClientRect();
-      const rect = el.getBoundingClientRect();
-
-      setPillStyle({
-        width: rect.width,
-        left: rect.left - containerRect.left,
-      });
-    }
-  }, [pathname]);
-
   const movePillTo = (el: HTMLAnchorElement | null) => {
     if (!el || !containerRef.current) return;
 
@@ -45,19 +29,40 @@ export default function Header() {
     });
   };
 
+  const movePillToActive = () => {
+    const activeIndex = links.findIndex((l) => l.href === pathname);
+    movePillTo(linkRefs.current[activeIndex]);
+  };
+
+  // Park the pill on the active route, and keep it there across resizes
+  // (font sizes change at the md breakpoint, so the measurements go stale).
+  useEffect(() => {
+    movePillToActive();
+
+    window.addEventListener("resize", movePillToActive);
+    return () => window.removeEventListener("resize", movePillToActive);
+  }, [pathname]);
+
   return (
     <div className="fixed top-6 left-1/2 z-50 -translate-x-1/2">
       <div className="flex items-center gap-1 md:gap-2 h-12 md:h-16 rounded-2xl md:rounded-3xl bg-white/40 backdrop-blur-md shadow-sm">
         {/* Logo */}
         <div className="flex items-center pl-4 pr-2 h-full">
-          <span className="text-sm font-bold text-white">CLEANMAVILLE</span>
+          <span className="whitespace-nowrap text-sm md:text-2xl font-bold tracking-tight text-white">
+            CLEANMAVILLE
+          </span>
         </div>
         {/* Toggle */}
-        <div ref={containerRef} className="relative flex rounded-full p-1">
+        <div
+          ref={containerRef}
+          onMouseLeave={movePillToActive}
+          className="relative flex rounded-full p-1"
+        >
           {/* Animated pill */}
           <motion.div
             className="absolute top-1 bottom-1 rounded-3xl bg-black"
-            animate={pillStyle}
+            initial={false}
+            animate={{ ...pillStyle, opacity: pillStyle.width ? 1 : 0 }}
             transition={{
               type: "spring",
               stiffness: 300,

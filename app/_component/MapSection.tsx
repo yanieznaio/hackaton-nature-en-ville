@@ -12,18 +12,34 @@ export default function MapSection() {
 
       {/* CONTENT */}
       <div className="relative z-10 max-w-9xl mx-auto px-8 pt-24">
-        {/* TEXT BLOCK */}
-        <div className="max-w-xl">
-          <h2 className="text-[clamp(3rem,6vw,5rem)] font-semibold leading-tight">
-            Agis pour
-            <br />
-            ta planète
-          </h2>
-          <p className="mt-6 text-white/60 text-lg leading-relaxed">
-            Une application qui transforme l’engagement écologique en missions
-            concrètes. Nettoie, protège ton environnement et gagne des
-            récompenses tout en faisant la différence.
-          </p>
+        {/* TEXT BLOCK + DEMO VIDEO */}
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
+          <div className="max-w-xl">
+            <h2 className="text-[clamp(3rem,6vw,5rem)] font-semibold leading-tight">
+              Agis pour
+              <br />
+              ta planète
+            </h2>
+            <p className="mt-6 text-white/60 text-lg leading-relaxed">
+              Une application qui transforme l’engagement écologique en missions
+              concrètes. Nettoie, protège ton environnement et gagne des
+              récompenses tout en faisant la différence.
+            </p>
+          </div>
+
+          {/* DEMO VIDEO */}
+          <div className="relative w-full lg:max-w-xl aspect-video rounded-2xl overflow-hidden bg-[#2a2a2a]">
+            <video
+              src="/demo.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="auto"
+              className="absolute inset-0 h-full w-full object-cover"
+              style={{ pointerEvents: "none" }}
+            />
+          </div>
         </div>
 
         {/* STATS */}
