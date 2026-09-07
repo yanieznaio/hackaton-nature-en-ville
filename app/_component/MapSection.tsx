@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MapSection() {
   return (
-    <section className="relative w-full min-h-screen bg-[#121212] text-white overflow-hidden">
+    <section className="relative w-full min-h-screen flex items-center bg-[#121212] text-white overflow-hidden">
       {/* BACKGROUND MAP */}
       <img
         src="/france.svg"
@@ -11,7 +11,7 @@ export default function MapSection() {
       />
 
       {/* CONTENT */}
-      <div className="relative z-10 max-w-9xl mx-auto px-8 pt-24">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-8 py-24">
         {/* TEXT BLOCK + DEMO VIDEO */}
         <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16">
           <div className="max-w-xl">
@@ -43,7 +43,7 @@ export default function MapSection() {
         </div>
 
         {/* STATS */}
-        <div className=" max-w-6xl mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <StatCard
             title="Jeunes engagés"
             value="12k+"
